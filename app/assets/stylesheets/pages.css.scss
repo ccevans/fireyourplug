@@ -1,0 +1,46 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.headerplug {float: left; min-height: 700px; width: 100%; margin: 0; padding: 0; background-color: rgba(45,222,199,1);}
+.secondplug {float: left; min-height: 600px; width: 100%; margin: 0; padding: 0; background: url('artspace.jpg'); background-size: 100% auto;}
+.thirdplug {float: left; min-height: 600px; width: 100%; margin: 0; padding: 0; background-color: rgba(45,222,199,1);}
+.plugslide {float: left; width: 80%; margin: 0 10%; padding: 10% 0; background-color: rgba(45,222,199,1);}
+.plugslide-info {float: left; font-family: "futura-pt",sans-serif;}
+.plugslide-info h1 {font-size: 100px; line-height: 110px; text-align: center; color: #000; font-variant: small-caps; font-weight: 700;}
+.plugslide-info h2 {font-size: 30px; line-height: 30px; text-align: right; color: #fff; font-weight: 300;}
+.plugbox {float: left; margin: 50px 0; padding: 0; width: 100%; font-family: "futura-pt",sans-serif;}
+.plugbox p {margin: 25px 20%; color: #fff; text-align: center; font-size: 18px; line-height: 20px; width: 60%;}
+.plugbox p i {font-size: 100px; color: #fff; text-align: center;}
+.plugbox h1 {font-size: 40px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 700;}
+.plugbox h2 {font-size: 30px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 300;}
+.plugbox h2 i {font-size: 24px; line-height: 40px; color: #fff;}
+.plugbox a {color: #000; text-decoration: none;}
+.plugbox a:hover {color: #000;}
+.plugbox ul {float: left; width: 100%; margin: 25px 0; list-style-type: none;}
+.plugbox ul li {float: left; width: 100%; font-size: 30px; color: #fff; text-align: center; font-weight: 300; margin: 5px 0;}
+.titleheader {
+    float: left;
+    font-family: "futura-pt",sans-serif;
+    font-weight: 700;
+    margin: 5px 5px 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.titleheader p {margin: 25px 20%; color: #fff; text-align: center; width: 60%;}
+
+.titleheader h1 {
+    color: #fff;
+    font-family: "futura-pt",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+.titleheader h1 i {
+    color: #000;
+    font-size: 40px;
+}
