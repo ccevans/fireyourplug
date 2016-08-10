@@ -1,5 +1,5 @@
 <div class="headerplug">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500" pause="null">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="null">
   <!-- Indicators -->
 
 
@@ -60,7 +60,7 @@
       		<div class="plugslide">
 			
 				<div class="plugslide-info">
-					<h1>Your plug still leaves with they moms.</h1>
+					<h1>Your plug still lives with their moms.</h1>
 					<h2>#fireYOURplug</h2>
 
 				</div>
@@ -84,6 +84,35 @@
 			<h2>And We Built PLUGS<i class="fa fa-plug fa-flip-horizontal"></i></h2>
 
 	</div>
+	<div class="plugphonebox">
+		<%= image_tag 'frontapp.png', :class => "phoneimage" %>
+
+	</div>
+
+	<% if false %>
+	<div class="plugphonebox">
+	    <div class="half light">
+        <div class="iphone-container">
+            <div class="phone-shape small">
+                <span class="button-one buttons"></span>
+                <span class="button-two buttons"></span>
+                <span class="button-three buttons"></span>
+                <span class="button-four button last"></span>
+                <div class="top-details">
+                    <span class="camera"></span>
+                    <span class="circle"></span>
+                    <span class="speaker"></span>
+                </div>
+                <div class="phone-screen">
+                    <!-- Put your screenshot here <img src="yourscreen.png" height="100%" width="100%" />-->
+                    <img src="assets/mobile.jpg" height="100%" width="100%" />
+                </div>
+                <div class="circle-button"></div>
+            </div>
+        </div>
+	</div>
+</div>
+<% end %>
 
 
 </div>
@@ -100,7 +129,7 @@
 
 		</ul>
 		<h1>Connect with a new plug</h1>
-		<p>We work 24/7 finding art, music and cultural events happening in the city.  Currently available in Charlotte, NC.  Be one of the first sign ups and get our premimum membership for free for life.</p>
+		<p>We work 24/7 finding art, music and cultural events happening in the city.  This is the only source you will need to keep up with cultural events. Currently available in Charlotte, NC.  Be one of the first sign ups and get our premimum membership for free for life.</p>
 
 		     <div class="titleheader">
 
@@ -113,3 +142,32 @@
 
 
 </div>
+
+
+<script>
+	$(document).ready(function(){
+							   
+	 $(window).resize(function(){
+
+	  $('.iphone-container').css({
+	   position:'absolute',
+	   left: ($('.light').width() 
+		 - $('.iphone-container').outerWidth())/2,
+	   top: ($('.light').height() 
+		 - $('.iphone-container').outerHeight())/2
+	  });
+
+	  $('.iphone-container').css({
+	   position:'absolute',
+	   left: ($('.dark').width() 
+		 - $('.iphone-container').outerWidth())/2,
+	   top: ($('.dark').height() 
+		 - $('.iphone-container').outerHeight())/2
+	  });
+
+	 });
+	 
+	 $(window).resize();
+
+	});
+</script>
