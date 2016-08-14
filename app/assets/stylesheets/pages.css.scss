@@ -14,10 +14,10 @@
 .plugbox p i {font-size: 100px; color: #fff; text-align: center;}
 .plugbox h1 {font-size: 40px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 700;}
 .plugbox h2 {font-size: 30px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 300;}
-.plugbox h2 i {font-size: 24px; line-height: 40px; color: #fff;}
+.plugbox h2 i {font-size: 16px; line-height: 30px; color: #fff;}
 .plugbox a {color: #000; text-decoration: none;}
 .plugbox a:hover {color: #000;}
-.plugbox ul {float: left; width: 100%; margin: 25px 0; list-style-type: none;}
+.plugbox ul {float: left; width: 100%; margin: 25px 0; list-style-type: none; padding: 0;}
 .plugbox ul li {float: left; width: 100%; font-size: 30px; color: #fff; text-align: center; font-weight: 300; margin: 5px 0;}
 .titleheader {
     float: left;
@@ -48,26 +48,52 @@
 .plugphonebox {width: 30%; margin: 10px 35%; padding: 0; float: left;}
 .phoneimage {width: 100%; margin: 0; padding: 0; float: left;}
 
-/*Not neccessary in your layout -- only here for the demo page layout styles*/
 
-.half {width:60%;  margin: 10px 20%; height:100%;display:inline-block;float:left;position:relative;}
-.half.dark {background-color:#ffa633;}
-.iphone-container {width:100%;}
+@media screen and (max-width: 640px){
+    .headerplug {float: left; min-height: 400px; width: 100%; margin: 0; padding: 0; background-color: rgba(45,222,199,1);}
+    .secondplug {float: left; min-height: 500px; width: 100%; margin: 0; padding: 0; background: image-url('mobile.jpg'); background-size: 100% auto; background-repeat: no-repeat; background-color: rgba(45,222,199,1);}
+    .thirdplug {float: left; min-height: 600px; width: 100%; margin: 0; padding: 0; background-color: rgba(45,222,199,1);}
+    .plugslide {float: left; width: 80%; margin: 0 10%; padding: 10% 0; background-color: rgba(45,222,199,1);}
+    .plugslide-info {float: left; font-family: "futura-pt",sans-serif;}
+    .plugslide-info h1 {font-size: 50px; line-height: 60px; text-align: center; color: #000; font-variant: small-caps; font-weight: 700;}
+    .plugslide-info h2 {font-size: 24px; line-height: 24px; text-align: right; color: #fff; font-weight: 300;}
+    .plugbox {float: left; margin: 50px 0; padding: 0; width: 100%; font-family: "futura-pt",sans-serif;}
+    .plugbox p {margin: 25px 20%; color: #fff; text-align: center; font-size: 18px; line-height: 20px; width: 60%;}
+    .plugbox p i {font-size: 80px; color: #fff; text-align: center;}
+    .plugbox h1 {font-size: 24px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 700;}
+    .plugbox h2 {font-size: 20px; color: #fff; text-align: center; text-transform: uppercase; font-weight: 300;}
+    .plugbox h2 i {font-size: 16px; line-height: 30px; color: #fff;}
+    .plugbox a {color: #000; text-decoration: none;}
+    .plugbox a:hover {color: #000;}
+    .plugbox ul {float: left; width: 100%; margin: 15px 0; list-style-type: none; padding: 0;}
+    .plugbox ul li {float: left; width: 100%; font-size: 24px; color: #fff; text-align: center; font-weight: 300; margin: 5px 0;}
+    .titleheader {
+        float: left;
+        font-family: "futura-pt",sans-serif;
+        font-weight: 700;
+        margin: 15px 0;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+    }
 
-/*Default Phone Color Styles - White*/
+    .titleheader p {margin: 25px 10%; color: #fff; text-align: center; width: 80%;}
 
-.phone-shape {width: 295px;height: 532px;border-radius: 40px;border: 2px solid #fff;margin:0 auto;padding: 60px 10px;background-color: #f3f3f3;position: relative;box-shadow:-47px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.1)}
-.phone-screen {height: 522px;width: 295px;background-color: #fff;box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;overflow: hidden;position: relative;}
-.top-details {position: absolute;left: 0;top: 17px;width: 100%;}
-.camera, .circle, .speaker {border-radius: 100px;display: block;background-color: #e1e1e1;}
-.camera {height: 7px;width: 7px;margin: auto;}
-.circle {height: 9px;width: 9px;position: absolute;left: 95px;top: 16px;}
-.speaker {height: 7px;width: 90px;margin: 10px auto 0;}
-.buttons, .button.last {width: 3px;background: #eee;position: absolute;}
-.buttons {box-shadow: -45px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.1);}
-.button.last {box-shadow:0 0 0 2px rgba(0,0,0,0.1);}
-.circle-button {height: 40px;width: 40px;background: #e1e1e1;margin: 17px auto;border-radius: 100px;}
-.button-one {height: 20px;left: -7px;top: 59px;border-radius: 4px 0 0 4px;}
-.button-two {height: 40px;width: 3px;left: -7px;top: 110px;border-radius: 4px 0 0 4px;}
-.button-three {height: 40px;width: 3px;left: -7px;top: 165px;border-radius: 4px 0 0 4px;}
-.button-four {height: 40px;width: 3px;right: -7px;top: 110px;border-radius: 0 4px 4px 0;}
+    .titleheader h1 {
+        color: #fff;
+        font-family: "futura-pt",sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0;
+        padding: 0;
+    }
+    .titleheader h1 i {
+        color: #000;
+        font-size: 40px;
+    }
+
+    .plugphonebox {width: 60%; margin: 10px 20%; padding: 0; float: left;}
+    .phoneimage {width: 100%; margin: 0; padding: 0; float: left;}
+
+}
