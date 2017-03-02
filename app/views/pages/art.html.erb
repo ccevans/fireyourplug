@@ -4,13 +4,13 @@
 		<% @posts.each do |post| %>
 
 			<div class="eventfooter">
-				<%= image_tag 'missing.png', :class => "profile-icon" %>
+				<%= image_tag 'tee-logo.png', :class => "footer-icon" %>
 				<%= link_to "Built by Chicken Coop Call Center", "http://www.chickencoop.cc/", :target => "_blank" %>
 			</div>
 
 			<div class="nodisplay"><%= raw(post.image_link) %></div>
 			
-			<h1 class="eventheader">Get off the couch <span>Charlotte</span></h1> 
+			<h1 class="eventheader"> <span>Charlotte</span></br>Get off the couch</h1> 
 
 			<h1><%= link_to post.title, post.link %></h1> 
 
