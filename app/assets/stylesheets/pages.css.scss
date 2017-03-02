@@ -120,15 +120,19 @@ h1.eventheader:hover span {visibility: visible;}
 .eventfooter iframe.twitter-tweet-button {float: right; margin: 10px 5px;}
 .eventfooter div.fb-like {float: right; margin: 10px 5px;}
 
-.painted {animation: painted 10000ms;}
+.painted {animation: painted 3000ms;}
 .painted2 {animation: painted 2000ms;}
 
 @keyframes painted {
   0% {
-    opacity: 0; transition: all 5000ms ease 0s; -webkit-transition: all 500ms ease 0s; -moz-transition: all 500ms ease 0s; -o-transition: all 500ms ease 0s;
+    opacity: 0; transition: all 500ms ease 0s; -webkit-transition: all 500ms ease 0s; -moz-transition: all 500ms ease 0s; -o-transition: all 500ms ease 0s;
   }
+  90% {
+    opacity: 0; transition: all 500ms ease 0s; -webkit-transition: all 500ms ease 0s; -moz-transition: all 500ms ease 0s; -o-transition: all 500ms ease 0s;
+  }
+
   100% {
-    opacity: 1; transition: all 5000ms ease 0s; -webkit-transition: all 500ms ease 0s; -moz-transition: all 500ms ease 0s; -o-transition: all 500ms ease 0s;
+    opacity: 1; transition: all 500ms ease 0s; -webkit-transition: all 500ms ease 0s; -moz-transition: all 500ms ease 0s; -o-transition: all 500ms ease 0s;
   }
 }
 @media screen and (max-width: 640px){
