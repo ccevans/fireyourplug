@@ -1,0 +1,11 @@
+<div class="postbox">
+<h1>Links</h1>
+<ul>
+
+<% @links.each do |link| %>
+	<li><h1><%= link.name %></h1><h2><%= link.link_to %></h2> <span> <%= link_to "Edit", edit_link_path(link) %> | <%= link_to "Destroy", link, method: :delete, data: {confirm: "Are you sure?" } %> </span> </li>
+<% end %>
+
+
+</ul>
+</div>

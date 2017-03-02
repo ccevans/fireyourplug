@@ -1,0 +1,199 @@
+<div class="events">
+
+
+		<% @posts.each do |post| %>
+			<div><%= raw(post.image_link) %></div>
+			
+
+			<h1><%= post.title %></h1> 
+
+
+
+			<div>
+				<% if post.tag == "Art" %>
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", music_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>						
+					<% end %>
+				<% elsif post.tag == "Music" %> 
+					<% if @random < 5  %>
+						<%= link_to "Trying to make art moves", art_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Food" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Nightlife" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Drinks" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Outdoors" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Sports" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% elsif post.tag == "Theatre" %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% else %>
+						<%= link_to "Let's do it for the culture", culture_path %>	
+					<% end %>
+				<% else %> 
+					<% if @random < 5  %>
+						<%= link_to "I'm trying to hear some music", root_path %>
+					<% elsif @random < 10 %>
+						<%= link_to "I like to eat", food_path %>
+					<% elsif @random < 15 %>
+						<%= link_to "What about the night life?", nightlife_path %>
+					<% elsif @random < 20 %>
+						<%= link_to "Looking to grab a drink", drinks_path %>
+					<% elsif @random < 25 %>
+						<%= link_to "I'll rather do something outdoors", outdoors_path %>
+					<% elsif @random < 30 %>
+						<%= link_to "What about sports?", sports_path %>
+					<% elsif @random < 35 %>
+						<%= link_to "Trying to make art moves", pages_art_path %>
+					<% else %>
+						<%= link_to "Trying to catch some entertainment", theatre_path %>
+					<% end %>
+				<% end %>
+
+
+
+
+
+
+				</div> 
+
+			<div onclick="myFunction()"><%= post.question_two %></div>
+		
+
+		 <span> <%= link_to "Edit", edit_post_path(post) %> | <%= link_to "Destroy", post, method: :delete, data: {confirm: "Are you sure?" } %> </span>
+		<% end %>
+
+
+</div>
+
+
+<script>
+function myFunction() {
+
+	window.location.reload();
+}
+</script>
