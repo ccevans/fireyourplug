@@ -38,7 +38,7 @@
         <%= f.text_field :image_link, class: "form-control" %>
       </div>  
       <div class="form-group">
-      <%= f.select :tag, [ 'Art', 'Music', 'Food', 'Nightlife', 'Drinks', 'Outdoors', 'Sports', 'Theatre', 'Culture' ], :prompt => 'Select One' %>
+      <%= f.select :tag, [ 'Art', 'Music', 'Food', 'Nightlife', 'Drinks', 'Outdoors', 'Sports', 'Theatre', 'Culture', 'Fitness' ], :prompt => 'Select One' %>
 
       <%= f.collection_select :category_ids, Category.all, :id, :name, {}, { :multiple => true} %>      
       </div>

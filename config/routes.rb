@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/sports', to: 'pages#sports'
   get '/theatre', to: 'pages#theatre'
   get '/culture', to: 'pages#culture'
+  get '/fitness', to: 'pages#fitness'
 
   resources :posts
   resources :categories

@@ -12,6 +12,7 @@ class Post < ActiveRecord::Base
 	scope :sports, -> { where(:tag => "Sports") }
 	scope :theatre, -> { where(:tag => "Theatre") }
 	scope :culture, -> { where(:tag => "Culture") }
+	scope :fitness, -> { where(:tag => "Fitness") }
 
 	#scope :art, -> (categories) { where(categories: '{1}') }
 
