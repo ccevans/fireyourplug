@@ -3,7 +3,7 @@
 
 		<% @posts.each do |post| %>
 
-			<div class="eventfooter painted2">
+			<div class="eventfooter painted">
 				<%= link_to "http://www.charlottegetoffthecouch.com/" do %><%= image_tag 'plugs-signup.png', :class => "footer-icon" %><% end %></br>
 				<div class="fb-like" data-href="http://www.charlottegetoffthecouch.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></br>
 				<a href="https://twitter.com/intent/tweet" class="twitter-hashtag-button" data-text="Charlotte Get Off The Couch " data-url="http://www.charlottegetoffthecouch.com/" data-related="getplugs" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></br>
@@ -11,11 +11,11 @@
 			</div>
 
 			
-			<h1 class="eventheader painted"> <span>Charlotte</span></br>Get off the couch and <%= link_to post.title, post.link, :target => "_blank" %></h1> 
+			<h1 class="eventheader"> <span>Charlotte</span></br>Get off the couch and <%= link_to post.title, post.link, :target => "_blank" %></h1> 
 
 
 
-			<div class="eventbutton painted">
+			<div class="eventbutton">
 				<% if post.tag == "Art" %>
 					<% if @random < 5  %>
 						<%= link_to "I'm trying to hear some music", music_path %>
@@ -220,7 +220,7 @@
 
 				</div> 
 
-			<div class="eventbutton2 painted" onclick="myFunction()">I'll rather chill on the couch</div>
+			<div class="eventbutton2" onclick="myFunction()">I'll rather chill on the couch</div>
 		
 		<% end %>
 
