@@ -9,7 +9,20 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <div id="fb-root"></div>
+  <script src="https://use.typekit.net/hej2knq.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+
+  <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -34,20 +47,5 @@
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
-
-  <script src="https://use.typekit.net/hej2knq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
-
-  <meta name="viewport" content="width=device-width" />
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-
-
 
 </html>
