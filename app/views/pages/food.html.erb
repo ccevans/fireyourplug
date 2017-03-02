@@ -4,8 +4,8 @@
 		<% @posts.each do |post| %>
 
 			<div class="eventfooter">
-				<%= image_tag 'tee-logo.png', :class => "footer-icon" %>
-				<%= link_to "Built by Chicken Coop Call Center", "http://www.chickencoop.cc/", :target => "_blank" %>
+				<%= link_to "http://www.plugsapp.com/" do %><%= image_tag 'plugs-signup.png', :class => "footer-icon" %><% end %></br>
+				<%= link_to "Built by</br>Chicken Coop</br>Call Center".html_safe, "http://www.chickencoop.cc/", :target => "_blank" %>
 			</div>
 
 			<div class="nodisplay"><%= raw(post.image_link) %></div>
