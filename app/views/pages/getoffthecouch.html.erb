@@ -4,13 +4,12 @@
 		<% @posts.each do |post| %>
 
 			<div class="eventfooter">
-				<%= link_to "http://www.plugsapp.com/" do %><%= image_tag 'plugs-signup.png', :class => "footer-icon" %><% end %></br>
-				<div class="fb-like" data-href="http://www.fireyourplug.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></br>
-				<a href="https://twitter.com/intent/tweet" class="twitter-hashtag-button" data-text="Charlotte Get Off The Couch " data-url="http://www.fireyourplug.com/" data-related="getplugs" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></br>
+				<%= link_to "http://www.charlottegetoffthecouch.com/" do %><%= image_tag 'plugs-signup.png', :class => "footer-icon" %><% end %></br>
+				<div class="fb-like" data-href="http://www.charlottegetoffthecouch.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></br>
+				<a href="https://twitter.com/intent/tweet" class="twitter-hashtag-button" data-text="Charlotte Get Off The Couch " data-url="http://www.charlottegetoffthecouch.com/" data-related="getplugs" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></br>
 				<%= link_to "Built by Chicken Coop Call Center".html_safe, "http://www.chickencoop.cc/", :target => "_blank" %>
 			</div>
 
-			<div class="nodisplay"><%= raw(post.image_link) %></div>
 			
 			<h1 class="eventheader"> <span>Charlotte</span></br>Get off the couch and <%= link_to post.title, post.link, :target => "_blank" %></h1> 
 
@@ -223,8 +222,6 @@
 
 			<div class="eventbutton2" onclick="myFunction()">I'll rather chill on the couch</div>
 		
-
-		 <span class="nodisplay"> <%= link_to "Edit", edit_post_path(post) %> | <%= link_to "Destroy", post, method: :delete, data: {confirm: "Are you sure?" } %> </span>
 		<% end %>
 
 
